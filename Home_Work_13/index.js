@@ -4,7 +4,7 @@
   let  sumPositive = 0;
   let sumEqual = 0;
   let multiplication = 1; 
-  let newArr = 0;
+  let max = numbers[0];
 
   let result = numbers.filter(function(elem) {
     if (elem >= 0) {
@@ -13,6 +13,18 @@
       return false;
     }
   });
+
+  
+
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > max) {
+        max = numbers[i];
+    }
+}
+
+let zero = numbers.map(val => max !== val ? 0 : val);
+
+  
 
   for (let i = 0; i < result.length; i++) {
     multiplication *= result[i];
@@ -25,11 +37,12 @@
   
   let maxNumber = (a, b) => {
     return a > b ? a : b;
-},
+  },
     minNumber = (a, b) => {
         return a < b ? a : b
     };
 
+  
     let minimumResult = numbers.filter(function(minimum) {
       if (minimum < 0) {
         return true;
@@ -74,6 +87,7 @@ console.log(positiveEqualResult.length);
 console.log(sumPositive);
 console.log(sumEqual);
 console.log(multiplication);
+console.log(zero);
 
 
   
@@ -83,7 +97,8 @@ console.log(multiplication);
    \n Кількість негативних елементів масиву  :${minimumResult.length}
    \n Кількість парних позитивних елементів ${positiveResult.length} їх сума: ${sumPositive}
    \n Кількість непарних позитивних елементів: ${positiveEqualResult.length} їх сума : ${sumEqual}
-   \n Добуток позитивних елементів : ${multiplication}` );
+   \n Добуток позитивних елементів : ${multiplication}
+   \n Найбільший серед елементів масиву, остальні обнулити : ${zero}` );
   
  
 
