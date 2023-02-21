@@ -1,12 +1,17 @@
-const array = [" Orange", " Apple", " Cheryy", " Strawberry", " Blueberry", " Pumpkin", " Watermelon"];
-alert(`Масив елементiв :${array}`);
-let indexNumber = prompt(`Введіть індекс елемента, який хочете видалити: 0,1,2,3,4,5,6 ?`)
+const arrayOfFruits = [ "ORANGE",  "APPLE",  "CHERRY",  "STRAWBERRY",  "BLUEBERRY",  "PUMPKIN"];
+alert(`Масив елементiв :\n${arrayOfFruits}`);
+let indexNumber = prompt(`Введіть  елемент, який хочете видалити: ?`)
 
-function removeElement(indexNumber) {
- 
-  array.splice(indexNumber, 1);
+removeElement(arrayOfFruits, indexNumber.toUpperCase());
+
+function removeElement(array, item) {
+  for (let index = 0; index < array.length; index++) {
+    if (item === array[index]) {
+      array.splice(index, 1);
+    }
+  }
 }
-removeElement(indexNumber);
-alert(array);
+
+alert(arrayOfFruits);
 
 
