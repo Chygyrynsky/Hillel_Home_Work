@@ -4,12 +4,12 @@ class Student {
       this.lastName = lastName;
       this.birthday = birthday;
       this.marks = [];
-      this._presence = new Array(5);
+      this._presence = new Array(25);
       this._current = 0;
   }
 
   get info() {
-    console.log(`Студент: ${this.firstName} ${this.lastName} \nВiк: ${student.age} \nCередній бал :${student.averageMark.toFixed(2)} \nСереднє відвідування : ${student.averagePresence.toFixed(1)} `);
+    console.log(`Студент: ${this.firstName} ${this.lastName} \nВiк: ${this.age}  `);
   }
 
   get age() {
@@ -25,7 +25,7 @@ class Student {
   get averagePresence() {
       let count = 0,
     sum = this._presence.reduce((a, b) => { ++count; return a + b; });
-      return sum / 5;
+      return sum / 25;
   }
 
   
@@ -42,32 +42,33 @@ class Student {
   }
 
   summary() {
-    if (student.averageMark > 90 && student.averagePresence > 0.9 )
+    if (this.averageMark > 90 && this.averagePresence > 0.9 )
         console.log("Загальне враження: Молодець!");
-      else if (student.averageMark < 90 && student.averagePresence < 0.9)
+      else if (this.averageMark < 90 && this.averagePresence < 0.9)
       {
         console.log("Загальне враження: Редиска!");
-       } else if ((student.averageMark < 90 || student.averagePresence < 0.9)) {
+       } else if ((this.averageMark < 90 || this.averagePresence < 0.9)) {
         console.log("Загальне враження: Добре, але можна краще ");
        }
   }
 
 }
 
-  const student = new Student("Тарас", "Шевченко", 1984);
-  const student1 = new Student("Андрiй", "Шевченко", 1935);
-  const student2 = new Student("Марiя", "Шевченко", 1990);
+  const taras = new Student("Тарас", "Шевченко", 1984);
+  const andriy = new Student("Андрiй", "Шевченко", 1965);
+  const mariya = new Student("Марiя", "Шевченко", 1990);
 
-  student.present(95);
-  student.present(95);
-  student.present(95);
-  student.present(95);
-  student.present(95);
-  student.summary();
+  andriy.present(95);
+  andriy.present(95);
+  andriy.present(95);
+ 
+  andriy.summary();
 
-  student.info; 
+  andriy.info; 
+
   
-        
+  
+
   
 
 
