@@ -1,0 +1,44 @@
+body {
+  text-align: center;
+  padding-left: 70px;
+}
+
+img {
+  border-color: black;
+  border-style: solid;
+}
+
+img:not(:last-child) {
+  margin-right: 70px;
+}
+
+button {
+  width: 170px;
+  padding: 30px;
+  background: transparent;
+  font-size: 18pt;
+  border: 1px solid black;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+#line {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+p {
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.smile {
+  height: 200px;
+}
