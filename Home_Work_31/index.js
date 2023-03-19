@@ -39,8 +39,8 @@ itemInfo.forEach(test=> {
       if (element2.style.display = "block") {
         element.style.display = "none";
         element1.style.display = "none";
-        element2.style.display = "none";
         element3.style.display = "none";
+        element4.style.display = "none";
       }
     }
     else if (class4) {
