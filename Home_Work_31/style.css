@@ -29,11 +29,41 @@ body {
   display: none;
 }
 
-.cards {
+.first {
+  display:none;
+}
+
+.second {
+  display:none;
+}
+
+.third {
+  display:none;
+}
+
+.four {
+  display:none;
+}
+
+.five {
   display:none;
 }
 
 .clicks  {
   cursor: pointer;
 }
+
+.hiden2 {
+  cursor: pointer;
+}
+
+.hiden3 {
+  cursor: pointer;
+}
+
+.hiden4 {
+  cursor: pointer;
+}
+
+
 

@@ -1,7 +1,67 @@
 const searchItem = document.querySelectorAll('.target');
-const itenInfo = document.querySelectorAll('.hiden');
-searchItem.forEach(target => {
-  const choseTarget = target.querySelector('.clicks ');
+
+const itemInfo = document.querySelectorAll('.test');
+
+itemInfo.forEach(test=> {
+  const choseTargetTest = test.querySelector('.clock');
+  choseTargetTest.addEventListener('click', function handleClicks(event) {
+
+    const class1 = event.target.classList.contains('hiden2')
+    const class2 = event.target.classList.contains('hiden1')
+    const class3 = event.target.classList.contains('hiden')
+    const class4 = event.target.classList.contains('hiden3')
+    const class5 = event.target.classList.contains('hiden4')
+
+
+    let element = document.querySelector('.first')
+    let element1 = document.querySelector('.second')
+    let element2 = document.querySelector('.third')
+    let element3 = document.querySelector('.four')
+    let element4 = document.querySelector('.five')
+
+    if (class1) {
+      if (element.style.display = "block") {
+        element1.style.display = "none";
+        element2.style.display = "none";
+        element3.style.display = "none";
+        element4.style.display = "none";
+      }
+    }
+    else if (class2) {
+      if (element1.style.display = "block") {
+        element2.style.display = "none";
+        element3.style.display = "none";
+        element4.style.display = "none";
+        element.style.display = "none";
+      }
+    }
+    else if (class3) {
+      if (element2.style.display = "block") {
+        element.style.display = "none";
+        element1.style.display = "none";
+        element2.style.display = "none";
+        element3.style.display = "none";
+      }
+    }
+    else if (class4) {
+      if (element3.style.display = "block") {
+        element.style.display = "none";
+        element1.style.display = "none";
+        element2.style.display = "none";
+        element4.style.display = "none";
+      }
+    }
+    else if (class5) {
+      if (element4.style.display = "block") {
+        element.style.display = "none";
+        element1.style.display = "none";
+        element2.style.display = "none";
+        element3.style.display = "none";
+      }
+    }
+  });
+});
+
 
 searchItem.forEach(target => {
   const choseTarget = target.querySelector('.clicks ');
