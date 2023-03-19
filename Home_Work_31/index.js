@@ -2,22 +2,32 @@ const searchItem = document.querySelectorAll('.target');
 
 const itemInfo = document.querySelectorAll('.test');
 
+const buyButton = document.querySelectorAll('.cards');
+
+buyButton.forEach(cards=> {
+  const buttonTarget = cards.querySelector('.btn-primary');
+  buttonTarget.addEventListener('click', function handleClicks(event) {
+    alert("Ви придбали цей товар!!!");
+    location.reload();
+  });
+});
+
 itemInfo.forEach(test=> {
   const choseTargetTest = test.querySelector('.clock');
   choseTargetTest.addEventListener('click', function handleClicks(event) {
 
-    const class1 = event.target.classList.contains('hiden2')
-    const class2 = event.target.classList.contains('hiden1')
-    const class3 = event.target.classList.contains('hiden')
-    const class4 = event.target.classList.contains('hiden3')
-    const class5 = event.target.classList.contains('hiden4')
+    const class1 = event.target.classList.contains('test1')
+    const class2 = event.target.classList.contains('test2')
+    const class3 = event.target.classList.contains('test3')
+    const class4 = event.target.classList.contains('test4')
+    const class5 = event.target.classList.contains('test5')
 
 
-    let element = document.querySelector('.first')
-    let element1 = document.querySelector('.second')
-    let element2 = document.querySelector('.third')
-    let element3 = document.querySelector('.four')
-    let element4 = document.querySelector('.five')
+    let element = document.querySelector('.five')
+    let element1 = document.querySelector('.six')
+    let element2 = document.querySelector('.seven')
+    let element3 = document.querySelector('.eight')
+    let element4 = document.querySelector('.nine')
 
     if (class1) {
       if (element.style.display = "block") {
