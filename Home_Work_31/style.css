@@ -1,0 +1,39 @@
+.left {
+  background-color: rgb(182, 106, 8);
+  display: flex;
+  width: 33%;
+  height: 100vh;
+}
+
+#center {
+  background-color: rgb(253, 199, 82);
+  display: flex;
+  width: 33%;
+  height: 100vh;
+}
+
+.right {
+  background-color: gray;
+  display: flex;
+  width: 33%;
+  height: 100vh;
+}
+
+body {
+ display: flex;
+ justify-content: space-between;
+}
+
+
+#hide {
+  display: none;
+}
+
+.cards {
+  display:none;
+}
+
+.clicks  {
+  cursor: pointer;
+}
+
