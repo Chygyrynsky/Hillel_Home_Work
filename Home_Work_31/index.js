@@ -1,10 +1,10 @@
 const searchItem = document.querySelectorAll('.target');
 
-const itemInfo = document.querySelectorAll('.test');
+const itemInfo = document.querySelectorAll('.tv_selector');
 
 const buyButton = document.querySelectorAll('.cards');
 
-buyButton.forEach(cards=> {
+buyButton.forEach(cards => {
   const buttonTarget = cards.querySelector('.btn-primary');
   buttonTarget.addEventListener('click', function handleClicks(event) {
     alert("Ви придбали цей товар!!!");
@@ -12,22 +12,22 @@ buyButton.forEach(cards=> {
   });
 });
 
-itemInfo.forEach(test=> {
+itemInfo.forEach(test => {
   const choseTargetTest = test.querySelector('.clock');
   choseTargetTest.addEventListener('click', function handleClicks(event) {
 
-    const class1 = event.target.classList.contains('test1')
-    const class2 = event.target.classList.contains('test2')
-    const class3 = event.target.classList.contains('test3')
-    const class4 = event.target.classList.contains('test4')
-    const class5 = event.target.classList.contains('test5')
+    const class1 = event.target.classList.contains('tvSelection_1')
+    const class2 = event.target.classList.contains('tvSelection_2')
+    const class3 = event.target.classList.contains('tvSelection_3')
+    const class4 = event.target.classList.contains('tvSelection_4')
+    const class5 = event.target.classList.contains('tvSelection_5')
 
 
-    let element = document.querySelector('.five')
-    let element1 = document.querySelector('.six')
-    let element2 = document.querySelector('.seven')
-    let element3 = document.querySelector('.eight')
-    let element4 = document.querySelector('.nine')
+    let element = document.querySelector('.card_five')
+    let element1 = document.querySelector('.card_six')
+    let element2 = document.querySelector('.card_seven')
+    let element3 = document.querySelector('.card_eight')
+    let element4 = document.querySelector('.card_nine')
 
     if (class1) {
       if (element.style.display = "block") {

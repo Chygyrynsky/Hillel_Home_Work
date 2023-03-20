@@ -1,25 +1,42 @@
+li  {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+.sofa {
+  position: absolute;
+  padding-left: 800px;
+  padding-top: 30px;
+}
+
 .left {
-  background-color: rgb(182, 106, 8);
   display: flex;
   width: 33%;
   height: 100vh;
+  border-right:solid 2px ;
+  padding-top: 120px;
+  padding-left: 50px;
 }
 
 #center {
-  background-color: rgb(253, 199, 82);
   display: flex;
   width: 33%;
   height: 100vh;
+  padding-top: 120px;
+  padding-left: 50px;
 }
 
 .right {
-  background-color: gray;
   display: flex;
   width: 33%;
   height: 100vh;
+  border-left:solid 2px ;
+  padding-left: 120px;
+  padding-top: 120px;
 }
 
 body {
+ background-image: url("images/background.jpg");
  display: flex;
  justify-content: space-between;
 }
@@ -29,39 +46,39 @@ body {
   display: none;
 }
 
-.first {
+.card_first {
   display:none;
 }
 
-.second {
+.card_second {
   display:none;
 }
 
-.third {
+.card_third {
   display:none;
 }
 
-.four {
+.card_four {
   display:none;
 }
 
-.five {
+.card_five {
   display:none;
 }
 
-.six {
+.card_six {
   display:none;
 }
 
-.seven {
+.card_seven {
   display:none;
 }
 
-.eight {
+.card_eight {
   display:none;
 }
 
-.nine {
+.card_nine {
   display:none;
 }
 
