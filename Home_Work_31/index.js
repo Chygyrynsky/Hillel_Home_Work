@@ -4,16 +4,91 @@ const itemInfo = document.querySelectorAll('.category_selector');
 
 const buyButton = document.querySelectorAll('.cards_selector');
 
-buyButton.forEach(cards => {
-  const buttonTarget = cards.querySelector('.btn-primary');
-  buttonTarget.addEventListener('click', function handleClicks(event) {
+const smartSelection = document.querySelectorAll('.smart_selection');
+
+const test = document.querySelectorAll('.element.style.display');
+
+
+buyButton.forEach(cards_selector => {
+  const buttonTarget = cards_selector.querySelector('.btn-primary');
+  buttonTarget.addEventListener('click', function handleClicks() {
     alert("Ви придбали цей товар!!!");
     location.reload();
   });
 });
 
-itemInfo.forEach(test => {
-  const choseTargetTest = test.querySelector('.clock');
+let element = document.querySelector('.card_five')
+let element1 = document.querySelector('.card_six')
+let element2 = document.querySelector('.card_seven')
+let element3 = document.querySelector('.card_eight')
+let element4 = document.querySelector('.card_nine')
+let element5 = document.querySelector('.card_first')
+let element6 = document.querySelector('.card_second')
+let element7 = document.querySelector('.card_third')
+let element8 = document.querySelector('.card_four')
+
+
+itemInfo.forEach(smart_selection => {
+  const smartTarget = smart_selection.querySelector('.clock');
+  smartTarget.addEventListener('click', function handleClik(event) {
+
+    const class6 = event.target.classList.contains('smartSelection_1')
+    const class7 = event.target.classList.contains('smartSelection_2')
+    const class8 = event.target.classList.contains('smartSelection_3')
+    const class9 = event.target.classList.contains('smartSelection_4')
+
+    if (class6) {
+      if (element5.style.display = "block") {
+        element6.style.display = "none";
+        element7.style.display = "none";
+        element4.style.display = "none";
+        element3.style.display = "none";
+        element2.style.display = "none";
+        element1.style.display = "none";
+        element.style.display = "none";
+      }
+    }
+    else if (class7) {
+      if (element6.style.display = "block") {
+        element5.style.display = "none";
+        element7.style.display = "none";
+        element8.style.display = "none";
+        element4.style.display = "none";
+        element3.style.display = "none";
+        element2.style.display = "none";
+        element1.style.display = "none";
+        element.style.display = "none";
+      }
+    }
+    else if (class8) {
+      if (element7.style.display = "block") {
+        element5.style.display = "none";
+        element6.style.display = "none";
+        element8.style.display = "none";
+        element4.style.display = "none";
+        element3.style.display = "none";
+        element2.style.display = "none";
+        element1.style.display = "none";
+        element.style.display = "none";
+      }
+    }
+    else if (class9) {
+      if (element8.style.display = "block") {
+        element5.style.display = "none";
+        element6.style.display = "none";
+        element7.style.display = "none";
+        element4.style.display = "none";
+        element3.style.display = "none";
+        element2.style.display = "none";
+        element1.style.display = "none";
+        element.style.display = "none";
+      }
+    }
+  });
+});
+
+itemInfo.forEach(category_target => {
+  const choseTargetTest = category_target.querySelector('.clock');
   choseTargetTest.addEventListener('click', function handleClicks(event) {
 
     const class1 = event.target.classList.contains('tvSelection_1')
@@ -21,22 +96,6 @@ itemInfo.forEach(test => {
     const class3 = event.target.classList.contains('tvSelection_3')
     const class4 = event.target.classList.contains('tvSelection_4')
     const class5 = event.target.classList.contains('tvSelection_5')
-    const class6 = event.target.classList.contains('smart_selection_1')
-    const class7 = event.target.classList.contains('smart_selection_2')
-    const class8 = event.target.classList.contains('smart_selection_3')
-    const class9 = event.target.classList.contains('smart_selection_4')
-
-
-    let element = document.querySelector('.card_five')
-    let element1 = document.querySelector('.card_six')
-    let element2 = document.querySelector('.card_seven')
-    let element3 = document.querySelector('.card_eight')
-    let element4 = document.querySelector('.card_nine')
-    let element5 = document.querySelector('.card_first')
-    let element6 = document.querySelector('.card_second')
-    let element7 = document.querySelector('.card_third')
-    let element8 = document.querySelector('.card_four')
-
 
     if (class1) {
       if (element.style.display = "block") {
@@ -44,6 +103,10 @@ itemInfo.forEach(test => {
         element2.style.display = "none";
         element3.style.display = "none";
         element4.style.display = "none";
+        element5.style.display = "none";
+        element6.style.display = "none";
+        element7.style.display = "none";
+        element8.style.display = "none";
       }
     }
     else if (class2) {
@@ -52,6 +115,10 @@ itemInfo.forEach(test => {
         element3.style.display = "none";
         element4.style.display = "none";
         element.style.display = "none";
+        element5.style.display = "none";
+        element6.style.display = "none";
+        element7.style.display = "none";
+        element8.style.display = "none";
       }
     }
     else if (class3) {
@@ -60,6 +127,10 @@ itemInfo.forEach(test => {
         element1.style.display = "none";
         element3.style.display = "none";
         element4.style.display = "none";
+        element5.style.display = "none";
+        element6.style.display = "none";
+        element7.style.display = "none";
+        element8.style.display = "none";
       }
     }
     else if (class4) {
@@ -68,6 +139,10 @@ itemInfo.forEach(test => {
         element1.style.display = "none";
         element2.style.display = "none";
         element4.style.display = "none";
+        element5.style.display = "none";
+        element6.style.display = "none";
+        element7.style.display = "none";
+        element8.style.display = "none";
       }
     }
     else if (class5) {
@@ -76,6 +151,10 @@ itemInfo.forEach(test => {
         element1.style.display = "none";
         element2.style.display = "none";
         element3.style.display = "none";
+        element5.style.display = "none";
+        element6.style.display = "none";
+        element7.style.display = "none";
+        element8.style.display = "none";
       }
     }
   });
@@ -140,6 +219,8 @@ searchItem.forEach(target => {
     }
   });
 });
+
+
 
 
 
