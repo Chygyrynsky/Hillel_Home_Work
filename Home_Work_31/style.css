@@ -9,7 +9,7 @@ li  {
   padding-top: 30px;
 }
 
-.left {
+.left_side_window {
   display: flex;
   width: 33%;
   height: 100vh;
@@ -18,7 +18,7 @@ li  {
   padding-left: 50px;
 }
 
-#center {
+#center_side_window {
   display: flex;
   width: 33%;
   height: 100vh;
@@ -26,7 +26,7 @@ li  {
   padding-left: 50px;
 }
 
-.right {
+.right_side_window {
   display: flex;
   width: 33%;
   height: 100vh;

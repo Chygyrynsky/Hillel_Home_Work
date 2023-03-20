@@ -1,8 +1,8 @@
-const searchItem = document.querySelectorAll('.target');
+const searchItem = document.querySelectorAll('.category_target');
 
-const itemInfo = document.querySelectorAll('.tv_selector');
+const itemInfo = document.querySelectorAll('.category_selector');
 
-const buyButton = document.querySelectorAll('.cards');
+const buyButton = document.querySelectorAll('.cards_selector');
 
 buyButton.forEach(cards => {
   const buttonTarget = cards.querySelector('.btn-primary');
@@ -21,6 +21,10 @@ itemInfo.forEach(test => {
     const class3 = event.target.classList.contains('tvSelection_3')
     const class4 = event.target.classList.contains('tvSelection_4')
     const class5 = event.target.classList.contains('tvSelection_5')
+    const class6 = event.target.classList.contains('smart_selection_1')
+    const class7 = event.target.classList.contains('smart_selection_2')
+    const class8 = event.target.classList.contains('smart_selection_3')
+    const class9 = event.target.classList.contains('smart_selection_4')
 
 
     let element = document.querySelector('.card_five')
@@ -28,6 +32,11 @@ itemInfo.forEach(test => {
     let element2 = document.querySelector('.card_seven')
     let element3 = document.querySelector('.card_eight')
     let element4 = document.querySelector('.card_nine')
+    let element5 = document.querySelector('.card_first')
+    let element6 = document.querySelector('.card_second')
+    let element7 = document.querySelector('.card_third')
+    let element8 = document.querySelector('.card_four')
+
 
     if (class1) {
       if (element.style.display = "block") {
