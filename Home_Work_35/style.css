@@ -1,0 +1,32 @@
+body {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+}
+
+#size {
+    width: 500px;
+}
+
+div.form-check {
+   width: 200px;
+}
+
+table {
+    border: 1px solid grey;
+ }
+
+ th {
+    border: 1px solid grey;
+ }
+ 
+
+ td {
+    border: 1px solid grey;
+    width: 200px;
+ }
+
+
+ 
+
+
