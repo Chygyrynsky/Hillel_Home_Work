@@ -1,0 +1,118 @@
+li  {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+.sofa {
+  position: absolute;
+  padding-left: 800px;
+  padding-top: 30px;
+}
+
+.left_side_window {
+  display: flex;
+  width: 33%;
+  height: 100vh;
+  border-right:solid 2px ;
+  padding-top: 120px;
+  padding-left: 50px;
+}
+
+#center_side_window {
+  display: flex;
+  width: 33%;
+  height: 100vh;
+  padding-top: 120px;
+  padding-left: 50px;
+}
+
+.right_side_window {
+  display: flex;
+  width: 33%;
+  height: 100vh;
+  border-left:solid 2px ;
+  padding-left: 120px;
+  padding-top: 120px;
+}
+
+body {
+ background-image: url("images/background.jpg");
+ display: flex;
+ justify-content: space-between;
+}
+
+
+#hide {
+  display: none;
+}
+
+.card_first {
+  display:none;
+}
+
+.card_second {
+  display:none;
+}
+
+.card_third {
+  display:none;
+}
+
+.card_four {
+  display:none;
+}
+
+.card_five {
+  display:none;
+}
+
+.card_six {
+  display:none;
+}
+
+.card_seven {
+  display:none;
+}
+
+.card_eight {
+  display:none;
+}
+
+.card_nine {
+  display:none;
+}
+
+.clicks  {
+  cursor: pointer;
+}
+
+.hiden {
+  cursor: pointer;
+}
+
+.hiden1 {
+  cursor: pointer;
+}
+
+.hiden2 {
+  cursor: pointer;
+}
+
+.hiden3 {
+  cursor: pointer;
+}
+
+.hiden4 {
+  cursor: pointer;
+}
+
+h1 {
+  align-content: center;
+}
+
+
+.input.error {
+  border-color: red;
+}
+
+
