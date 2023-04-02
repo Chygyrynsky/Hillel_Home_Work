@@ -13,8 +13,6 @@ const orderForm = document.getElementById('center_side_window')
 const nameChange = document.getElementById('sofa')
 
 
-
-
 buyButton.forEach(cards_selector => {
   const buttonTarget = cards_selector.querySelector('.btn-primary');
   buttonTarget.addEventListener('click', function handleClicks() {
@@ -70,9 +68,9 @@ buyButton.forEach(cards_selector => {
           </div>
           <select class="input form-select js-input-selection" aria-label="Склад Нової пошти для надсилання">
             <option selected>Склад Нової пошти для надсилання</option>
-            <option value="1">Отделение №3	Одесса, ул. Дальницкая, 23/4</option>
-            <option value="2">Отделение №7	Одесса, ул. Жуковского, 10</option>
-            <option value="3">Отделение №9	Одесса, ул. Сегедская, 18</option>
+            <option value="Отделение №3">Отделение №3	Одесса, ул. Дальницкая, 23/4</option>
+            <option value="Отделение №7">Отделение №7	Одесса, ул. Жуковского, 10</option>
+            <option value="Отделение №9">Отделение №9	Одесса, ул. Сегедская, 18</option>
           </select>
         <div class="col-12">
                 <button class="btn btn-primary test" type="submit" >Замовити</button>
@@ -84,7 +82,7 @@ buyButton.forEach(cards_selector => {
   formInputs = document.querySelectorAll('.js-input'),
   inputCheckbox = document.querySelector('.js-input-checkbox'),
   inputSelectionbox = document.querySelector('.js-input-selection'),
-  option=document.getElementsByName('exampleRadios');
+  option = document.getElementsByName('exampleRadios');
 
     form.onsubmit = function () {
       let emptyInputs = Array.from(formInputs).filter(input => input.value === '');
@@ -114,30 +112,31 @@ buyButton.forEach(cards_selector => {
         inputSelectionbox.classList.add('error');
         return false;
       }
+      const formElement = document.getElementById('registrationForm');
+      formData = new FormData(formElement);
+      const name = formData.get('name');
+      const surname = formData.get('surname');
+      const city = formData.get('city');
+      const adress = formData.get('adress');
+      const gender = formData.get('exampleRadios');
+      const quantity = document.getElementById("quantity").value;
+      const warehouse =  inputSelectionbox.value;  
+  
+  function renderDetails() {
+    nameChange.innerHTML = `<h1>Ваше замовлення<h1/>`
+    orderForm.innerHTML = `
+      <table class="table table-dark table-striped-columns">
+      <tbody>
+      <tr><th>Ім'я</th><th>Прізвище</th><th>Форма оплати</th><th>Мicто</th><th>Коментар</th><th>Кiлькicть товару</th><th>Cклад</th></tr>
+      <tr><td>${name}</td><td>${surname}</td><td>${gender}</td><td>${city}</td><td>${adress}</td><td>${quantity}</td><td>${warehouse}</td></tr> 
+      </tbody>
+      </table>
+    `;
 
+  }
+  renderDetails();
 
     }
-    const formElement = document.getElementById('registrationForm');
-    formData = new FormData(formElement);
-    const name = formData.get('name');
-    const surname = formData.get('surname');
-    const dob = formData.get('dob');
-    const city = formData.get('city');
-    const adress = formData.get('adress');
-    const gender = formData.get('exampleRadios')
-
-    
-function renderDetails() {
-  orderForm.innerHTML = `
-    <table class="table table-dark table-striped-columns">
-    <tbody>
-    <tr><th>Ім'я</th><th>Прізвище</th><th>Дата народження</th><th>Стать</th><th>Місто</th><th>Адреса</th><th>Мови</th></tr>
-    <tr><td>${name}</td><td>${surname}</td><td>${dob}</td><td>${gender}</td><td>${city}</td><td>${adress}</td><td></td></tr> 
-    </tbody>
-    </table>
-  `;
-}
-renderDetails();
   });
 });
 
